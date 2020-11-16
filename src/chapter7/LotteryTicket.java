@@ -9,6 +9,7 @@ public class LotteryTicket {
 
     public static void main(String args[]){
         int[] ticket = generateNumbers();
+        Arrays.sort(ticket);
         printTicket(ticket);
     }
     public static int[] generateNumbers(){
