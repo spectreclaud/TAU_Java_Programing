@@ -2,11 +2,10 @@ package chapter9;
 
 public class InheritanceTester {
     public static void main(String args[]){
-        Rectangle rectangle = new Rectangle();
-        rectangle.print();
+        Mother mom = new Mother();
+        mom.setName("Krystyna");
 
-        Square square = new Square();
-        square.print("square");
+        System.out.println(mom.getName() + " is a " + mom.getGender() + ".");
     }
     public static void testSquareOverride(){
         Rectangle rectangle = new Rectangle();
